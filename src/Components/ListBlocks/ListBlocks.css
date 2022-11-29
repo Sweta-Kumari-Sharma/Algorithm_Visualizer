@@ -1,0 +1,22 @@
+.listBlocks{
+    margin: 0px auto;
+    min-height: 70vh;
+    min-width: 80vw;
+    text-align: center;
+    color: cornflowerblue;
+}
+.listBlocks .block{
+    background-color: cornflowerblue;
+    color: aquamarine;
+    display: inline-block;
+    margin: 1px;
+}
+.listBlocks{
+    margin: 0 auto;
+    min-height: 520px;
+    min-width: 90%;
+    text-align: center;
+    transition-duration: 150ms;
+    transition-property: height;
+    transition-timing-function: ease-in;
+}

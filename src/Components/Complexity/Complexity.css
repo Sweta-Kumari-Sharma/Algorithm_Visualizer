@@ -1,0 +1,39 @@
+.details{
+    color: white;
+}
+.complexity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.comp{
+    margin: 20px;
+}
+.times{
+    display: flex;
+    flex-direction: row;
+}
+.uim{
+    color: blue;
+}
+.square{
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    display: inline-block;
+
+}
+.swap{
+    background-color: rgb(191, 85, 85);
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+}
+.compare{
+    color: mediumpurple;
+}
+.sorted{
+    color: rgb(42, 138, 42);
+}
