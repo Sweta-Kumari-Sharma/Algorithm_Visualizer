@@ -17,5 +17,6 @@ export default function selectionSort(blocks){
         }
         order.push([null,null,null,i]);
     }
+    console.log(order);
     return order;
 }

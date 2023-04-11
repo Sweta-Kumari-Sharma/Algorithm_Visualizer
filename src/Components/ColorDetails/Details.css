@@ -22,15 +22,15 @@
 }
 
 .compare{
-    background-color: #ffff50;
+    background-color: #cc81be;
 }
 
 .swap {
-    background-color: red;
+    background-color: #dbab39;
 }
 
 .sorted{
-    background-color: #4bc52e;
+    background-color: #52bf60;
 }
 
 @media(max-width: 564px){

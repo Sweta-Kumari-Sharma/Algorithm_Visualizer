@@ -1,7 +1,7 @@
 import React from 'react'
-import './Legends.css'
+import './Details.css'
 
-const Legends = ({algo}) => {
+const Details = ({algo}) => {
     return (
         <div className='legends'>
             <div className='key'> 
@@ -17,4 +17,4 @@ const Legends = ({algo}) => {
     )
 }
 
-export default Legends
+export default Details

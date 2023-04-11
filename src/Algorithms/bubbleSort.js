@@ -1,4 +1,3 @@
-import React from 'react'
 
 const swap=(array,i,j)=>{
     const temp=array[i];

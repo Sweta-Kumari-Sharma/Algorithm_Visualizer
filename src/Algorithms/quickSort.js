@@ -50,7 +50,8 @@ const quickSort = (blocks) => {
     order = []
     
     quickSortHelper(dupBlocks, 0, dupBlocks.length - 1)
-    
+    console.log('quick sort order');
+    console.log(order);
     return order
 }
 

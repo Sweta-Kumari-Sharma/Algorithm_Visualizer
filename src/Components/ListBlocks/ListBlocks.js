@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './ListBlocks.css'
 
-export default function ListBlocks({swap, blocks,compare,sorted}){
+export default function ListBlocks({blocks,sorting,compare,swap,sorted}){
     const[width,setWidth]=useState(Math.min(20, Math.ceil(window.innerWidth / blocks.length) - 5));
     const color=blocks.length<=50 && width>14? 'black':'transparent';
 
@@ -17,14 +17,17 @@ export default function ListBlocks({swap, blocks,compare,sorted}){
             {blocks.map((block,i) =>{
                 const height=block * 500 / blocks.length;
                 let bg='cornflowerblue';
-                if(compare&& (i==compare[0] || i==compare[1])){
-                    bg='purple';
+                if(sorting && compare[0] && (i===compare[0] || i===compare[1])){
+                    bg='#cc81be';
+                    {/* console.log('comparing..' ) */}
                 }
-                if(swap && (i==swap[0] || i==swap[1])){
-                    bg='blue';
+                if( i===swap[0] || i===swap[1]){
+                    bg='#dbab39';
+                    {/* console.log('swapping..') */}
                 }
-                if(sorted&& sorted.includes(i)){
-                    bg='green';
+                if(sorted && sorted.includes(i)){
+                    {/* console.log('sorted partially') */}
+                    bg='#52bf60';
                 }
                 const style={
                     'backgroundColor':bg,
